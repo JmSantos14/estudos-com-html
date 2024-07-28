@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Alinhamento</title>
+    <style>
+        div{
+            display: inline-block; 
+            background-color: lightblue;
+            border: 1px solid;
+            text-align: center;
+            height: 200px;
+            width: 200px;
+        }
+        div >p{
+            display: none;
+            margin: 2%;
+        }
+        div:hover > p{
+            display: inline-block;
+            color: goldenrod;
+            background-color: gray;
+            width: 80px;
+        }
+        div:hover{
+            color: goldenrod;
+        }
+        p{
+            /*border-width: 5px;
+            border-style: solid;
+            border-color: blanchedalmond;*/
+
+            border: 5px solid blanchedalmond;
+            border-radius: 8px 0px;
+            box-shadow: 3px 3px 2px 2px  rgba(0, 0, 0, 0.342);
+
+            outline: 2.5px solid burlywood;
+
+            padding: 5px 5px 5px 5px; /*Espacamento do conteudo para parte de fora */
+            width: 90px;/*largura*/
+            height: 17px;/*altura*/
+            margin: 10px auto;/*margem*/ /*Centralizado*/
+
+            background-color: aliceblue;
+            text-align: center;
+        }
+        a{
+            text-decoration: none;
+            color:gray;
+            font-weight: bold;
+            padding: 10px;
+        }
+        a:hover{
+            color: rgb(90, 90, 90);
+        }
+        header{
+            background-image: linear-gradient(45deg, rgb(250, 250, 250),lightgray, burlywood, gold, goldenrod);
+            box-shadow: 1px 2px 1px lightgray;
+            height: 30px;
+            width: 100%;
+            margin: 0px 0px 50px 0px ;
+            padding: 5px;
+            box-shadow: 5px 3px 7px 1px rgba(128, 128, 128, 0.521);
+            border-radius: 6px;
+        }
+        body{
+            margin: 0%;
+        }
+        footer{
+            margin: 15px 0%;
+            background-color: rgb(216, 189, 149);
+            text-align: right;
+            padding: 9px;
+            box-shadow: 5px 3px 7px 1px rgba(128, 128, 128, 0.37);
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <button><a href="index.html">Home</a></button>
+        <button><a href="https://github.com/JmSantos14" target="_blank" rel="external">Contato</a></button>
+    </header>
+    <main>
+        <div>
+            1
+            <p>Hidden</p>
+        </div>
+        <div>2</div>
+        <div>3</div>
+        
+        <h1>Exemplo de Caixas</h1>
+        <img src="midia/boxes.jpeg" alt="Exemplo boxes">
+        <p>Um box level</p>
+    </main>
+<footer>
+    Made By Santos
+</footer>
+
+</body>
+</html>

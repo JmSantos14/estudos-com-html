@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>GPS</title>
+    <link rel="stylesheet" href="style.css">
+
+</head>
+<body>
+    <button style="background-image: linear-gradient(-45deg, #68F7E1, #68B2F7, #68DFF7, #68F7B0, #D6DDFA);"><a href="index.html" >Index</a></button>
+
+    <h1>Imagem dinamica</h1>
+    <picture>
+        <source media="(max-width: 500px)" srcset="images/S.png" type="image/png">
+        <source media="(max-width: 900px)" srcset="images/P.png" type="image/png">
+        <img src="images/M.png" alt="imagem flexivel">
+    </picture>
+
+
+    <h1>Reproduzindo Audio</h1>
+    <audio preload="metadata"autoplay controls loop>
+        <source src="midia/algumaudio.mp3" type="audio/mpeg">
+        <source src="midia/algumaudio.ogg" type="audio/ogg">
+        <source src="midia/algumaudio.wav" type="audio/wav">
+        <p>navegador nao compativel com audio
+            <a href="midia/algumaudio.mp3">Clique para baixar</a>
+        </p>
+    </audio>
+
+
+    <h1>Videos</h1>
+    <video width="200" poster="images/thumb.png" controls>
+        <source src="midia/algumvideo.mp4" type="Video/mp4">
+        <source src="midia/algumvideo.m4v" type="Video/m4v">
+        <source src="midia/algumvideo.wetn" type="Video/wetn">
+        <source src="midia/algumvideo.ogv" type="Video/ogg">
+        <p>Seu Navegador não é compativel com o formato do video
+            <a href="midia/algumvideo.mp4">Clique para baixar</a>
+        </p>
+    </video>
+
+    <h1>Outro Metodo e mais leve</h1>
+    <iframe width="280" height="200" src="https://www.youtube.com/embed/3hng-hmSv2Y?si=40S0AASyrlL2qAJN" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+</body>
+</html>
